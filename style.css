@@ -1,0 +1,113 @@
+/* A simple css reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.hero {
+    background-image: url('images/BANNER.png');
+    min-height: 25vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 1.5em 2em;
+    border-radius: 1em;
+}
+
+.hero-text {
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    margin: 0.5em 0 0;
+}
+
+.topic-title {
+    color: white;
+    font-size: 2em;
+    padding: 0.1em 3em;
+    background-color: rgb(71, 71, 71);
+}
+
+.section-text {
+    width: 70%;
+    margin: 2em auto 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    color: #333;
+}
+
+.topic-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    width: 70%;
+    margin: 3em auto;
+}
+
+.topic-card {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 0 0 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topic-card-text {
+    font-size: 1.5em;
+    margin: 0.8em 0 0.5em;
+    text-align: center;
+}
+
+.card-description {
+    margin: 0 1em;
+    line-height: 1.5;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.footer {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    text-align: right;
+    padding: 3em 3em;
+}
+
+@media (max-width: 900px) {
+    .topic-content {
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+
+    .hero-text {
+        font-size: 2.6em;
+    }
+
+    .section-text {
+        width: 85%;
+    }
+}
